@@ -1,29 +1,32 @@
 {
   "expo": {
-    "name": "xfitness-member-app",
-    "slug": "xfitness-member-app",
+    "name": "xfitness-member-app", // Or your desired app name
+    "slug": "xfitness-member-app", // URL-friendly name
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
-    "newArchEnabled": true,
+    "icon": "./assets/icon.png", // Corrected path to the default PNG icon
+    "userInterfaceStyle": "dark", // Set to dark to match your theme
     "splash": {
-      "image": "./assets/splash-icon.png",
+     "image": "./assets/icon.png", // <--- CHANGE THIS LINE
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#252525" // Match your app's background color
     },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": true
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      },
-      "edgeToEdgeEnabled": true
+        "foregroundImage": "./assets/adaptive-icon.png", // Default adaptive icon
+        "backgroundColor": "#252525" // Match your app's background color
+      }
     },
     "web": {
-      "favicon": "./assets/favicon.png"
-    }
+      "favicon": "./assets/favicon.png" // Default favicon
+    },
+    // Optional: Add plugins if needed later (e.g., for AsyncStorage)
+    "plugins": []
   }
 }
